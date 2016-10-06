@@ -1,1 +1,255 @@
-haha
+<!DOCTYPE html>
+<html ng-app="portfolioApp">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+	<title>JD Penuliar Portfolio</title>
+	<!-- CSS  -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link rel="stylesheet" href="thirdparty/font-awesome-4.6.3/css/font-awesome.min.css">
+	<!--Import jQuery before materialize.js-->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-route.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-messages.js"></script>
+
+ 
+
+    <script>
+    	var portfolioAppModule = angular.module("portfolioApp",["ngRoute","ngMessages"]);
+    </script>
+
+</head>
+<body>
+	<nav class="white" role="navigation">
+		<div class="nav-wrapper container">
+			<a id="logo-container" href="#" class="brand-logo teal-text">JD Penuliar</a>
+			<ul class="right hide-on-med-and-down">
+				<li><a target="_blank" href="https://www.linkedin.com/in/jdpenuliar" class="teal-text fa fa-linkedin fa-2x waves-effect waves-light" aria-hidden="true"></a></li>
+				<li><a target="_blank" href="https://github.com/jdpenuliar?tab=repositories" class="teal-text fa fa-github fa-2x waves-effect waves-light" aria-hidden="true"></a></li>
+				<li><a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=jaydz.penuliar@gmail.com" class="teal-text fa fa-envelope-square fa-2x waves-effect waves-light" aria-hidden="true"></a></li>
+			</ul>
+
+			<ul id="nav-mobile" class="side-nav">
+				<li><a target="_blank" href="https://www.linkedin.com/in/jdpenuliar" class="teal-text fa fa-linkedin fa-2x waves-effect waves-light" aria-hidden="true"></a></li>
+				<li><a target="_blank" href="https://github.com/jdpenuliar?tab=repositories" class="teal-text fa fa-github fa-2x waves-effect waves-light" aria-hidden="true"></a></li>
+				<li><a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=jaydz.penuliar@gmail.com" class="teal-text fa fa-envelope-square fa-2x waves-effect waves-light" aria-hidden="true"></a></li>
+			</ul>
+			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+		</div>
+	</nav>
+
+	<div id="index-banner" class="parallax-container">
+		<div class="section no-pad-bot">
+			<div class="container">
+				<br><br>
+				<h1 class="header center light"><i class="fa fa-code" aria-hidden="true"></i>Full Stack Web and Mobile <i class="fa fa-mobile" aria-hidden="true"></i><br><i class="fa fa-database" aria-hidden="true"></i>Developer<i class="fa fa-database" aria-hidden="true"></i></h1>
+				<div class="row center">
+					<h5 class="header col s12 light">Want an app done? Lets work together and make your dream into reality</h5>
+				</div>
+				<div class="row center">
+					<a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=jaydz.penuliar@gmail.com" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Yes I am available to hire!</a>
+				</div>
+				<br><br>
+
+			</div>
+		</div>
+		<div class="parallax"><img src="./images/python001.png" alt="Unsplashed background img 1"></div>
+	</div>
+
+
+	<div class="container">
+		<div class="section">
+			<div class="row">
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h4 class="center bold teal-text"><i class="teal-text fa fa-code" aria-hidden="true"></i>Languages<i class="teal-text fa fa-code" aria-hidden="true"></i></h4>
+
+						<p class="center light">HTML 5</p>
+						<p class="center light">CSS 3</p>
+						<p class="center light">Javascript</p>
+						<p class="center light">Python</p>
+						<p class="center light">Node.js</p>
+						<p class="center light">Swift</p>
+						<p class="center light">Objective C</p>
+					</div>
+				</div>
+
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h4 class="center teal-text"><i class="teal-text fa fa fa-database" aria-hidden="true"></i>Databases<i class="teal-text fa fa fa-database" aria-hidden="true"></i></h4>
+
+						<p class="center light">MySQL (SQL Database)</p>
+						<p class="center light">MongoDB (NoSQL Database)</p>
+					</div>
+				</div>
+
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h4 class="center teal-text"><i class="teal-text fa fa-codepen" aria-hidden="true"></i>Frameworks<i class="teal-text fa fa-codepen" aria-hidden="true"></i></h4>
+
+						<p class="center light">Express.js</p>
+						<p class="center light">Angular.js</p>
+						<p class="center light">Pylot(in-house framework)</p>
+						<p class="center light">Django(coming soon)</p>
+						<p class="center light">React.js(coming soon)</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="parallax-container valign-wrapper">
+		<div class="section no-pad-bot">
+			<div class="container">
+				<!-- <div class="row center">
+					<h5 class="header col s12 black-text">A modern responsive front-end framework based on Material Design</h5>
+				</div> -->
+				<!--   Icon Section   -->
+			<div class="row center">
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center black-text text-darken-2"><i class="material-icons">flash_on</i></h2>
+						<h5 class="center black-text text-darken-2">Speedy development</h5>
+
+						<p class="black-text text-darken-2">Speedy and versatile development of projects.</p>
+					</div>
+				</div>
+
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center black-text text-darken-2"><i class="material-icons">group</i></h2>
+						<h5 class="center black-text text-darken-2">Team work</h5>
+
+						<p class="black-text text-darken-2">Easy to adapt, work or lead teams to achieve deadlines.</p>
+					</div>
+				</div>
+
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center black-text text-darken-2"><i class="material-icons">settings</i></h2>
+						<h5 class="center black-text text-darken-2">User requirements</h5>
+
+						<p class="black-text text-darken-2">Goes above and beyond user requirements and functionalities.</p>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="parallax"><img src="/images/maxresdefault.jpg" alt="Unsplashed background img 2"></div>
+	</div>
+
+	<div class="container">
+		<div class="section">
+			<div class="row">
+				<div class="col s12 center">
+					<h3><i class="mdi-content-send brown-text"></i></h3>
+					<h4 class="teal-text">Get in touch</h4>
+					<p class="center light">Click the icons to contact me</p>
+					</div>
+				</div>
+			</div>
+			
+			<!--   Icon Section   -->
+			<div class="row">
+				<div class="col s12 m3">
+					<div class="icon-block">
+						<h2 class="center teal-text"><a target="_blank" href="https://www.linkedin.com/in/jdpenuliar" class="teal-text fa fa-linkedin fa-2x waves-effect waves-light" aria-hidden="true"></a></h2>
+						<h5 class="center"><a target="_blank" href="https://www.linkedin.com/in/jdpenuliar">Linkedin</a></h5>
+					</div>
+				</div>
+
+				<div class="col s12 m3">
+					<div class="icon-block">
+						<h2 class="center teal-text"><a target="_blank" href="https://github.com/jdpenuliar?tab=repositories" class="waves-effect waves-light teal-text fa fa-github fa-2x" aria-hidden="true"></a></h2>
+						<h5 class="center"><a target="_blank" href="https://github.com/jdpenuliar?tab=repositories">Github</a></h5>
+					</div>
+				</div>
+
+				<div class="col s12 m3">
+					<div class="icon-block">
+						<h2 class="center teal-text"><a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=jaydz.penuliar@gmail.com" class="teal-text fa fa-envelope-square fa-2x waves-effect waves-light" aria-hidden="true"></a></h2>
+						<h5 class="center"><a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=jaydz.penuliar@gmail.com">E-mail</a></h5>
+					</div>
+				</div>
+
+				<div class="col s12 m3">
+					<div class="icon-block">
+						<h2 class="center teal-text"><a target="_blank" href="https://drive.google.com/open?id=0B6yKumpIlagORklDajBKQU5pR3M" class="teal-text fa fa-file-pdf-o fa-2x waves-effect waves-light" aria-hidden="true"></a></h2>
+						<h5 class="center"><a target="_blank" href="https://drive.google.com/open?id=0B6yKumpIlagORklDajBKQU5pR3M">Résumé</a></h5>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="parallax-container valign-wrapper">
+		<div class="section no-pad-bot">
+			<div class="container">
+				<div class="row center">
+					<h5 class="header col s12 light">A quick learner, team player, versatile developer</h5>
+				</div>
+			</div>
+		</div>
+		<div class="parallax"><img src="images/mean.jpg" alt="Unsplashed background img 3"></div>
+	</div>
+
+	<footer class="page-footer teal">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">About me</h5>
+					<p class="grey-text text-lighten-4">
+						<ul>
+							<li class="white-text">FULL STACK DEVELOPER (WEB AND MOBILE)</li>
+						</ul>
+						<ul>
+							<li class="white-text">Web and mobile developer proficient in PYTHON, SWFIT(iOS) and MEAN stacks.</li>
+							<li class="white-text">Seasoned experience with basic ANDROID and PHP.</li>
+							<li class="white-text">Knowledgeable in SQL and NoSQL design.</li>
+							<li class="white-text">Proficient in researching and integrating APIs.</li>
+							<li class="white-text">Experienced in researching, testing, and deployment.</li>
+						</ul>
+					</p>
+
+
+				</div>
+				<div class="col l3 s12">
+					<!-- <h5 class="white-text">Settings</h5>
+					<ul>
+						<li><a class="white-text" href="#!">Link 1</a></li>
+						<li><a class="white-text" href="#!">Link 2</a></li>
+						<li><a class="white-text" href="#!">Link 3</a></li>
+						<li><a class="white-text" href="#!">Link 4</a></li>
+					</ul> -->
+				</div>
+				<div class="col l3 s12">
+					<h5 class="white-text">Connect</h5>
+					<ul>
+						<li><a class="white-text" target="_blank" href="https://www.linkedin.com/in/jdpenuliar"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i> Linkedin</a></li>
+						<li><a class="white-text" target="_blank" href="https://github.com/jdpenuliar?tab=repositories"><i class="fa fa-github fa-2x" aria-hidden="true"></i>Github</a></li>
+						<li><a class="white-text" target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=jaydz.penuliar@gmail.com"><i class="fa fa-envelope-square fa-2x" aria-hidden="true"></i>Gmail</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				Template Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+			</div>
+		</div>
+	</footer>
+
+
+	<!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="js/materialize.js"></script>
+	<script src="js/init.js"></script>
+
+	</body>
+</html>
